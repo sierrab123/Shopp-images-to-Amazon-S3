@@ -1,0 +1,34 @@
+Shopp-images-to-Amazon-S3
+
+This perl file will convert the values in the shopp_meta_table from FSS to Amazon S3 when using the Shopp addon, Amazon S3 which you will need to install before attempting to use this program.
+
+How to use
+
+Create an account at Amazon and open a new bucket for your shopp images
+
+Back up your shopp site and db.  VERY IMPORTANT
+
+Copy all the image files from your image folder to your newly created bucket. There is no need to copy the cached image files.
+
+Open up FSSconverter.pl and make the changes to the variables
+
+Upload to your site, give the file 755 permissions.
+
+Run it first with the commented out action lines to check that the results look correct
+
+Change the Storage seeings in Shopp to Amazon S3 you will need to enter your ID and Security numbers, save and then enter the name of the bucket and save again.
+
+Uncomment out the lines towards the bottom of the per file and run again, the db entries will now point all the products at the new storage location for the images.
+
+All that remains is now to delete the old cached image data lines from the db as they are still pointing at the old cached files
+
+You can find these by searching for lines where "context" and "type" are both image and then deleting them
+
+Hit Delete cached images a few times in Shopp/System Advanced
+
+Review your site
+
+Use this script at your own risk, it worked for me but no guarantees
+
+
+
