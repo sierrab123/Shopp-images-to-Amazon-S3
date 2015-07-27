@@ -18,7 +18,7 @@ Run it first with the commented out action lines to check that the results look 
 
 Change the Storage seeings in Shopp to Amazon S3 you will need to enter your ID and Security numbers, save and then enter the name of the bucket and save again.
 
-Uncomment out the lines towards the bottom of the per file and run again, the db entries will now point all the products at the new storage location for the images.
+Uncomment out the lines towards the bottom of the perl file and run again, the db entries will now point all the products at the new storage location for the images.
 
 All that remains is now to delete the old cached image data lines from the db as they are still pointing at the old cached files
 
