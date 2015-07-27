@@ -12,7 +12,7 @@ Copy all the image files from your image folder to your newly created bucket. Th
 
 Open up FSSconverter.pl and make the changes to the variables
 
-Upload to your site, give the file 755 permissions.
+Upload to your site, give the file 755 permissions. You can then run it from your browser by typing in the url of its location at your site
 
 Run it first with the commented out action lines to check that the results look correct
 
